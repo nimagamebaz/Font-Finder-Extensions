@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinox Font Finder</title>
+    <link rel="icon" href="icons/cinox-font-finder.png" />
+    <style>
+        @font-face {
+            font-family: un;
+            src: url(fonts/Unbounded-VariableFont_wght.ttf);
+        }
+        html {
+            outline: none;
+            border: none;
+            box-shadow: none;
+            filter: none;
+            background-color: #fafafa;
+        }
+        body {
+            font-family: un;
+            font-weight: 300;
+            width: 330px;
+            padding: 10px;
+            margin: none;
+            outline: none;
+            border: none;
+        }
+        #fontList {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: start;
+            list-style: none;
+            padding: 0;
+            color: #1b1b1b;
+            font-size: 1.2em;
+        }
+        #fontList li{
+            margin-block: 0.3em;
+        }
+        h3{
+            font-size: 2.1em;
+            color: #272727;
+            margin-block: 0.3em;
+            font-family: un;
+            font-weight: 650;
+        }
+        .text{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        p{
+            padding: 0.5em;
+            text-align: center;
+            width: 67%;
+            background: #ff5500;
+            border-radius: 0.5em;
+            color: #e6e6e6;
+            font-size: 1.3em;
+            font-weight: 300;
+        }
+        a{
+            padding: 0.5em;
+            text-align: center;
+            width: 22%;
+            background: #6000ff;
+            border-radius: 0.5em;
+            color: #e6e6e6;
+            font-size: 1.3em;
+            font-weight: 300;
+            height: auto;
+            transition-property: transform;
+            transition-duration: 0.3s;
+        }
+        a:hover{
+            transform: scale(0.95);
+            background-color: #ff5500;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h3>This Page Fonts:</h3>
+    <ul id="fontList"></ul>
+    <script src="popup.js"></script>
+    <div class="text">
+        <a href="https://www.cinox.ir" target="_blank">Cinox.ir</a>
+        <p>Ne Mutlu Türküm Diyene</p>
+    </div>
+</body>
+</html>
